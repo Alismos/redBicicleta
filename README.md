@@ -2,7 +2,7 @@
 This is a web a application about rent bikes using docker-compose and mongoDB in local. 
 
 1. git clone the repository
-2. Enter folder: `cd >repository>`
+2. Enter folder: `cd <repository>`
 4. Install dependencies: `npm install`
 5. Start application: `npm start`
 6. Visit [http://localhost:3000](http://localhost:3000) in your browser
