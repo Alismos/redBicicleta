@@ -1,0 +1,25 @@
+version: "3"
+services:
+  redbici:
+    image: "node:8"
+    build: .
+    container_name: "redbici"
+    environment:
+      NODE_ENV: development
+      NODE_PATH: /
+    ports:
+      - "8080:3000"
+    links:
+      - mongodb
+    depends_on:
+      - mongodb
+  mongodb:
+    image: mongo:3.4.10
+    container_name: "redbici-mongodb"
+    volumes:
+      - redbici-mongo-data:/data/db
+    ports:
+      - 27017:27017
+    command: mongod --smallfiles --logpath=/dev/null
+volumes:
+  redbici-mongo-data:

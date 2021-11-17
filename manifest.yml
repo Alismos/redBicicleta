@@ -1,0 +1,9 @@
+applications:
+  - name: redbicicleta2
+    memory: 128M
+    disk_quota: 128M
+    buildpack: nodejs_buildpack
+    host: saavarbicicletas
+    command: npm start
+    env:
+      env_type: production
