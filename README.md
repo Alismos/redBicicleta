@@ -1,4 +1,4 @@
-# redBicicleta
+# Red Bicicletas
 This is a web a application about rent bikes using docker-compose and mongoDB in local. 
 
 1. git clone the repository
